@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LSA</title>
+        <link rel="stylesheet" href="public/landing.css">
+        <script type="text/javascript" src="public/main.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <div class="header-logo">
+                <img src="public/img/logo.png" alt="logotype">
+                <span class="header-company-name">Language Solutions Agency</span>
+            </div>
+            
+            <ul class="flex-row header-menu">
+                <li>О нас</li>
+                <li>Услуги</li>
+                <li>Контакты</li>
+            </ul>
+            <div class="flex-column header-contacts">
+                <a href="tel:+4733378901">+47 333 78 901</a>
+                <a href="mailto:someone@example.com">someone@example.com</a>
+                <span>График работы 9:00 - 19:00</span>
+            </div>
+        </header>
+        <div class="order">
+            <h1>Закажите перевод онлайн <br/> Не выходя из дома или офиса </h1>
+            <div class="make-order">
+                <img src="public/img/timer-icon.svg" alt="timer">
+                <span>Отправьте заявку и мы свяжемся с Вами в течении 10 минут</span>
+            </div>
+            <form class="order-form">
+                <div class="flex-column">
+                    <input placeholder="Ваше имя" type="text" name="text" class="input-field" id="name">
+                    <input placeholder="Ваш телефон" type="text" name="text" class="input-field" id="phone">
+                    <input placeholder="Ваш имэйл" type="text" name="text" class="input-field" id="email">
+                </div>
+                <div class="flex-column relative">
+                    <textarea name="comment" placeholder="Комментарий" cols="30" rows="10" id="comment"></textarea>
+                    <button type="button" onclick="sendRequest()">Отправить</button>
+
+                    <div id="status-ok" class="send-status">
+                        <img src="public/img/green-check.svg" alt="done">
+                        <span>Ваша заявка отправлена</span>
+                    </div>
+
+                    <div id="status-err" class="send-status">
+                        <img src="public/img/failure.svg" alt="failure">
+                        <span>Ошибка при отправке заявки. Попробуйте еще раз или свяжитесь с нами по телефону.</span>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="about">
+            <h2>О нас</h2>
+            <p>Профессиональное бюро переводов в Москве</p>
+            <p>
+                Наше бюро переводов предоставляет качественные услуги по переводу письменных
+                текстов любого уровня сложности с любого иностранного языка на русский и
+                наоборот. За время существования нашего бюро мы значительно выросли, достигли
+                многих успехов и накопили немалый опыт в переводах разных направлений.
+            </p>
+    
+            <p>
+                Вы можете в любой момент связаться с нашим менеджером, получить консультацию, внести
+                необходимые изменения в заказ или добавить какие-то дополнительные материалы на
+                перевод. Все персональные данные, которые передает клиент, защищены и
+                обрабатываются конфиденциально.
+            </p>
+        </div>
+
+        <div class="services">
+            <h2>Наши услуги</h2>
+            <p>За более подробной информацией звоните нам по телефону +1 123 456 78 90</p>
+            <div class="services-wrapper">
+                <div class="service">
+                    <h3>Письменный перевод</h3>
+                    <ul>
+                        <li>техническая документация</li>
+                        <li>юридические документы</li>
+                        <li>медицинские документы</li>
+                        <li>финансово-экономические документы</li>
+                        <li>перевод художественных текстов и др.</li>
+                    </ul>
+                </div>
+                <div class="service">
+                    <h3>Перевод личных документов</h3>
+                    <ul>
+                        <li>перевод паспортов</li>
+                        <li>загранпаспортов</li>
+                        <li>дипломов об образовании</li>
+                        <li>свидетельств</li>
+                        <li>справок и др.</li>
+                    </ul>
+                </div>
+                <div class="service">
+                    <h3>Нотариальное удостоверение и Апостиль</h3>
+                    <span>Консульская легализация и апостилирование переведенных документов, нотариальное удостоверение перевода.</span>
+                </div>
+                <div class="service">
+                    <h3>Редакция и печать</h3>
+                    <span>Редакция и корректура текста, верстка и дизайн макета, печать готовых материалов.</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="languages">
+            <h2>Языки перевода</h2>
+            <img src="public/img/translation.jpeg" alt="languages">
+            <div class="availbale-languages">
+                <ul>
+                    <li>
+                        <img src="public/img/flags/az.svg" alt="az">
+                        Азербайджанский
+                    </li>
+                    <li>
+                        <img src="public/img/flags/ae.svg" alt="ae">
+                        Арабский
+                    </li>
+                    <li>
+                        <img src="public/img/flags/am.svg" alt="am">
+                        Армянский
+                    </li>
+                    <li>
+                        <img src="public/img/flags/bg.svg" alt="bg">
+                        Болгарский
+                    </li>
+                    <li>
+                        <img src="public/img/flags/hu.svg" alt="hu">
+                        Венгерский
+                    </li>
+                    <li>
+                        <img src="public/img/flags/gr.svg" alt="gr">
+                        Греческий
+                    </li>
+                    <li>
+                        <img src="public/img/flags/ge.svg" alt="ge">
+                        Грузинский
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <img src="public/img/flags/dk.svg" alt="dk">
+                        Датский
+                    </li>
+                    <li>
+                        <img src="public/img/flags/il.svg" alt="il">
+                        Иврит
+                    </li>
+                    <li>
+                        <img src="public/img/flags/cn.svg" alt="cn">
+                        Китайский
+                    </li>
+                    <li>
+                        <img src="public/img/flags/lt.svg" alt="lt">
+                        Литовский
+                    </li>
+                    <li>
+                        <img src="public/img/flags/md.svg" alt="md">
+                        Молдавский
+                    </li>
+                    <li>
+                        <img src="public/img/flags/nl.svg" alt="nl">
+                        Нидерландский (голландский)
+                    </li>
+                    <li>
+                        <img src="public/img/flags/no.svg" alt="no">
+                        Норвежский
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <img src="public/img/flags/pt.svg" alt="pt">
+                        Португальский
+                    </li>
+                    <li>
+                        <img src="public/img/flags/ro.svg" alt="ro">
+                        Румынский
+                    </li>
+                    <li>
+                        <img src="public/img/flags/ru.svg" alt="ru">
+                        Русский
+                    </li>
+                    <li>
+                        <img src="public/img/flags/sk.svg" alt="sk">
+                        Словацкий
+                    </li>
+                    <li>
+                        <img src="public/img/flags/si.svg" alt="si">
+                        Словенский
+                    </li>
+                    <li>
+                        <img src="public/img/flags/fi.svg" alt="fi">
+                        Финский
+                    </li>
+                    <li>
+                        <img src="public/img/flags/jp.svg" alt="jp">
+                        Японский
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="flex-column column-center order-info">
+            <h2>Как заказать перевод</h2>
+            <div class="flow">
+                <div class="order-info__block">
+                    <img src="public/img/order-icon.svg" alt="order">
+                    <span class="header">Заявка</span>
+                    <span class="description">Свяжитесь с нашим менеджером и отправьте ему необходимые файлы</span>
+                </div>
+                <img src="public/img/arrow-right-icon.svg" alt="arrow right" class="arrow">
+                <div class="order-info__block">
+                    <img src="public/img/manager-icon.svg" alt="order">
+                    <span class="header">Менеджер</span>
+                    <span class="description">Наш менеджер проанализирует материал и свяжется с вами для обсуджения стоимости и сроков перевода</span>
+                </div>
+                <img src="public/img/arrow-right-icon.svg" alt="arrow right" class="arrow">
+                <div class="order-info__block">
+                    <img src="public/img/translate-icon.svg" alt="order">
+                    <span class="header">Перевод</span>
+                    <span class="description">Мы быстро и качественно переведем ваш материал и в случае необходимости выполним нотариальное заверение и заверение печатью бюро</span>
+                </div>
+                <img src="public/img/arrow-right-icon.svg" alt="arrow right" class="arrow">
+                <div class="order-info__block">
+                    <img src="public/img/done-icon.svg" alt="order">
+                    <span class="header">Готовый заказ</span>
+                    <span class="description">Готовые документы вы можете получить у нас в офисе либо другим удобным для вас способом</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex-column footer-contacts">
+            <h2>Наши контакты:</h2>
+
+            <div class="flex-row footer-contacts-row">
+                <div class="contact-block">
+                    <img src="public/img/phone-icon.svg" alt="phone">
+                    <div class="contact-block__header">
+                        <span>Звонить по номеру:</span>
+                    </div>
+                    <span>+7 (000) 000-00-01</span>
+                </div>
+                <div class="contact-block">
+                    <img src="public/img/email-icon.svg" alt="email">
+                    <div>
+                        <span>Электронная почта:</span>
+                    </div>
+                    <span>test@example.com</span>
+                </div>
+                <div class="contact-block">
+                    <img src="public/img/clock-icon.svg" alt="clock">
+                    <div>
+                        <span>Время работы:</span>
+                    </div>
+                    <span>Пн.-Вс. 9.00-19.00</span>
+                </div>
+            </div>
+            
+            <div class="enterpreneur-info">
+                <div class="enterpreneur-info__links">
+                    <span>Оферта</span>
+                    <span>Политика конфиденциальности</span>
+                </div>
+                <span>ИП Головина Ольга Игоревна</span>
+            </div>
+        </div>
+
+    </body>
+</html>

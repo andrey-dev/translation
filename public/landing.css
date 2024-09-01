@@ -1,0 +1,355 @@
+@font-face {
+    font-family: 'Lato';
+    src: url('font/Lato-Regular.eot'); /* IE9 Compat Modes */
+    src: url('font/Lato-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('font/Lato-Regular.woff') format('woff'), /* Modern Browsers */
+         url('font/Lato-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+body {
+    margin: 0;
+    font-family: 'Lato';
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background-color: #fff;
+    padding: 0 40px;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo img {
+    width: 60px;
+    height: 60px;
+}
+
+.header-company-name {
+    margin-left: 10px;
+    align-self: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.header-contacts {
+    align-self: center;
+}
+
+.header-menu {
+    margin: 0;
+    padding: 0;
+    align-self: center;
+    list-style-type: none;
+}
+
+.header-menu li {
+    margin: 0 20px;
+}
+
+.flex-row {
+    display: flex;
+}
+
+.row-center {
+    justify-content: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.column-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.order {
+    background-image: url('/public/img/bg.svg');
+    background-size: cover;
+    background-color: #6eb4d1;
+    color: #fff;
+    padding: 40px;
+}
+
+.order-form {
+    /* width: 300px; */
+    display: flex;
+    gap: 10px;
+}
+
+.order-form input, .order-form textarea {
+    width: 200px;
+}
+
+textarea {
+    height: 76px;
+    /* height: 161px; */
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    border: 1.5px solid lightgrey;
+    outline: none;
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+    box-shadow: 0px 0px 20px -18px;
+}
+
+/* ---------------------------------- */
+.input-field {
+    width: 100%;
+    max-width: 280px;
+    height: 20px;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    border: 1.5px solid lightgrey;
+    outline: none;
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+    box-shadow: 0px 0px 20px -18px;
+  }
+  
+  .input-field:hover {
+    /* border: 2px solid lightgrey; */
+    box-shadow: 0px 0px 20px -17px;
+  }
+  
+  .input-field:active {
+    /* transform: scale(0.95); */
+  }
+  
+  .input-field:focus {
+    border: 1.5px solid lightblue;
+  }
+
+  .order-form button {
+    height: 45.6px;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    background: #F3F7EC;
+    /* background: #D0DDD7; */
+    /* border: 1.5px solid #D0DDD7; */
+    border: 1.5px solid #F3F7EC;
+    cursor: pointer;
+  }
+  
+  .order-form button:hover {
+    background: #D0DDD7;
+    border: 1.5px solid #D0DDD7;
+  }
+  
+/* ---------------------------------- */
+
+.order h1 {
+    margin: 0;
+}
+
+.make-order {
+    display: flex;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.make-order img {
+    height: 24px;
+    margin-right: 20px;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 25% 40px 25%;
+}
+
+.services {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 25% 40px 25%;
+    background-color: #adbabd;
+}
+
+.services p {
+    margin: 0 0 1em 0;
+}
+
+.services-wrapper {
+    display:grid;
+    grid-template-columns: 300px 300px;
+    grid-row: auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.service {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.service ul {
+    padding-left: 14px;
+}
+
+.languages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 40px;
+    background-color: #f0eff4;
+}
+
+.availbale-languages {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-top: 40px;
+}
+
+.availbale-languages ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.availbale-languages li img {
+    width: 24px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.availbale-languages li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.how-to {
+    display: flex;
+    flex-direction: column;
+}
+
+.flow {
+    display: flex;
+    padding: 0 15%;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+}
+
+.contact-block__header {
+    display: flex;
+    align-items: center;
+}
+
+.footer-contacts {
+    background-color: #2f365f;
+    color: #fff;
+}
+
+.footer-contacts h2 {
+    align-self: center;
+}
+
+h2 {
+    margin: 40px 0;
+}
+
+.footer-contacts-row {
+    justify-content: space-evenly;
+}
+
+.footer-contacts-row img {
+    width: 24px;
+    align-self: center;
+}
+
+.enterpreneur-info {
+    margin: 40px 0 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.enterpreneur-info__links {
+    margin-bottom: 10px;
+}
+
+.enterpreneur-info span:first-child {
+    margin-right: 20px;
+}
+
+.order-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 40px;
+    background-color: #adbabd;
+}
+
+.order-info img {
+    width: 48px;
+}
+
+.order-info .header {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.order-info .description {
+    text-align: center;
+}
+
+.order-info .arrow {
+    align-self: flex-start;
+}
+
+.order-info__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.relative {
+    position: relative;
+}
+
+.send-status {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: -25px;
+    font-size: 14px;
+    width: 600px;
+    display: none;
+}
+
+.status-visible {
+    display: flex;
+}
+
+.send-status img {
+    height: 24px;
+    margin-right: 5px;
+}
