@@ -18,11 +18,14 @@ const transporter = nodemailer.createTransport({
 });
 
 app.use(express.json());
-app.use("/public", express.static(__dirname + "/public"));
+app.use("/font", express.static(__dirname + "/font"));
+app.use("/img", express.static(__dirname + "/img"));
+app.use("/styles", express.static(__dirname + "/styles"));
+app.use("/src", express.static(__dirname + "/src"));
 
 app.get('/', (req, res) => {
   // res.send('Welcome to my server!');
-  res.sendFile(path.join(__dirname, 'public/index.html'));
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 app.post('/request', (req, res) => {
