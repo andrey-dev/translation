@@ -9,53 +9,68 @@
     </head>
 
     <body>
-        <header>
-            <div class="header-logo">
-                <img src="img/logo.png" alt="logotype">
-                <span class="header-company-name">Language Solutions Agency</span>
-            </div>
-            
-            <ul class="flex-row header-menu">
-                <li>О нас</li>
-                <li>Услуги</li>
-                <li>Контакты</li>
-            </ul>
-            <div class="flex-column header-contacts">
-                <a href="tel:+4733378901">+47 333 78 901</a>
-                <a href="mailto:someone@example.com">someone@example.com</a>
-                <span>График работы 9:00 - 19:00</span>
-            </div>
-        </header>
-        <div class="order">
-            <h1>Закажите перевод онлайн <br/> Не выходя из дома или офиса </h1>
-            <div class="make-order">
-                <img src="img/timer-icon.svg" alt="timer">
-                <span>Отправьте заявку и мы свяжемся с Вами в течении 10 минут</span>
-            </div>
-            <form class="order-form">
-                <div class="flex-column">
-                    <input placeholder="Ваше имя" type="text" name="text" class="input-field" id="name">
-                    <input placeholder="Ваш телефон" type="text" name="text" class="input-field" id="phone">
-                    <input placeholder="Ваш имэйл" type="text" name="text" class="input-field" id="email">
+        <section class="header-and-order">
+            <header>
+                <div class="header-logo">
+                    <img src="img/logo.svg" alt="logotype">
+                    <span class="header-company-name">Language Solutions Agency</span>
                 </div>
-                <div class="flex-column relative">
-                    <textarea name="comment" placeholder="Комментарий" cols="30" rows="10" id="comment"></textarea>
-                    <button type="button" onclick="sendRequest()">Отправить</button>
-
-                    <div id="status-ok" class="send-status">
-                        <img src="img/green-check.svg" alt="done">
-                        <span>Ваша заявка отправлена</span>
+                
+                <nav class="header-menu">
+                    <a href="#">О нас</a>
+                    <a href="#">Услуги</a>
+                    <a href="#">Контакты</a>
+                </nav>
+                <div class="flex-column header-contacts">
+                    <span>График работы 9:00 - 19:00</span>
+                    <div class="header-contacts__phone">
+                        <div class="phone-icons">
+                            <img src="img/phone.svg" alt="phone">
+                            <img src="img/telegram.svg" alt="telegram">
+                            <img src="img/whatsup.svg" alt="whatsapp">
+                        </div>
+                        <a href="tel:+4733378901">+47 333 78 901</a>
                     </div>
-
-                    <div id="status-err" class="send-status">
-                        <img src="img/failure.svg" alt="failure">
-                        <span>Ошибка при отправке заявки. Попробуйте еще раз или свяжитесь с нами по телефону.</span>
+                    <div class="header-contacts__email">
+                        <img src="img/email.svg" alt="email">
+                        <a href="mailto:someone@example.com">someone@example.com</a>
                     </div>
                 </div>
-            </form>
-        </div>
+            </header>
+            <div class="order">
+                <img class="globe" src="img/globe-new.png" alt="globe">
+                <div class="form-wrapper">
+                    <h1>Закажите перевод онлайн <br/> Не выходя из дома или офиса </h1>
+                    <div class="make-order">
+                        <img src="img/timer.svg" alt="timer">
+                        <span>Отправьте заявку и мы свяжемся с Вами в течении 10 минут</span>
+                    </div>
+                    <form class="order-form">
+                        <div class="flex-column">
+                            <input placeholder="Ваше имя" type="text" name="text" class="input-field" id="name">
+                            <input placeholder="Ваш телефон" type="text" name="text" class="input-field" id="phone">
+                            <input placeholder="Ваш имэйл" type="text" name="text" class="input-field" id="email">
+                        </div>
+                        <div class="flex-column relative">
+                            <textarea name="comment" placeholder="Комментарий" cols="30" rows="10" id="comment"></textarea>
+                            <button type="button" onclick="sendRequest()">Отправить</button>
+        
+                            <div id="status-ok" class="send-status">
+                                <img src="img/-green-check.svg" alt="done">
+                                <span>Ваша заявка отправлена</span>
+                            </div>
+        
+                            <div id="status-err" class="send-status">
+                                <img src="img/-failure.svg" alt="failure">
+                                <span>Ошибка при отправке заявки. Попробуйте еще раз или свяжитесь с нами по телефону.</span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
 
-        <div class="about">
+        <div class="about" style="display: none;">
             <h2>О нас</h2>
             <p>Профессиональное бюро переводов в Москве</p>
             <p>
@@ -73,7 +88,7 @@
             </p>
         </div>
 
-        <div class="services">
+        <div class="services" style="display: none;">
             <h2>Наши услуги</h2>
             <p>За более подробной информацией звоните нам по телефону +1 123 456 78 90</p>
             <div class="services-wrapper">
@@ -109,9 +124,9 @@
 
         </div>
 
-        <div class="languages">
+        <div class="languages" style="display: none;">
             <h2>Языки перевода</h2>
-            <img src="img/translation.jpeg" alt="languages">
+            <img src="img/-translation.jpeg" alt="languages">
             <div class="availbale-languages">
                 <ul>
                     <li>
@@ -206,55 +221,55 @@
             </div>
         </div>
 
-        <div class="flex-column column-center order-info">
+        <div class="flex-column column-center order-info" style="display: none;">
             <h2>Как заказать перевод</h2>
             <div class="flow">
                 <div class="order-info__block">
-                    <img src="img/order-icon.svg" alt="order">
+                    <img src="img/-order-icon.svg" alt="order">
                     <span class="header">Заявка</span>
                     <span class="description">Свяжитесь с нашим менеджером и отправьте ему необходимые файлы</span>
                 </div>
-                <img src="img/arrow-right-icon.svg" alt="arrow right" class="arrow">
+                <img src="img/-arrow-right-icon.svg" alt="arrow right" class="arrow">
                 <div class="order-info__block">
-                    <img src="img/manager-icon.svg" alt="order">
+                    <img src="img/-manager-icon.svg" alt="order">
                     <span class="header">Менеджер</span>
                     <span class="description">Наш менеджер проанализирует материал и свяжется с вами для обсуджения стоимости и сроков перевода</span>
                 </div>
-                <img src="img/arrow-right-icon.svg" alt="arrow right" class="arrow">
+                <img src="img/-arrow-right-icon.svg" alt="arrow right" class="arrow">
                 <div class="order-info__block">
-                    <img src="img/translate-icon.svg" alt="order">
+                    <img src="img/-translate-icon.svg" alt="order">
                     <span class="header">Перевод</span>
                     <span class="description">Мы быстро и качественно переведем ваш материал и в случае необходимости выполним нотариальное заверение и заверение печатью бюро</span>
                 </div>
-                <img src="img/arrow-right-icon.svg" alt="arrow right" class="arrow">
+                <img src="img/-arrow-right-icon.svg" alt="arrow right" class="arrow">
                 <div class="order-info__block">
-                    <img src="img/done-icon.svg" alt="order">
+                    <img src="img/-done-icon.svg" alt="order">
                     <span class="header">Готовый заказ</span>
                     <span class="description">Готовые документы вы можете получить у нас в офисе либо другим удобным для вас способом</span>
                 </div>
             </div>
         </div>
 
-        <div class="flex-column footer-contacts">
+        <div class="flex-column footer-contacts" style="display: none;">
             <h2>Наши контакты:</h2>
 
             <div class="flex-row footer-contacts-row">
                 <div class="contact-block">
-                    <img src="img/phone-icon.svg" alt="phone">
+                    <img src="img/-phone-icon.svg" alt="phone">
                     <div class="contact-block__header">
                         <span>Звонить по номеру:</span>
                     </div>
                     <span>+7 (000) 000-00-01</span>
                 </div>
                 <div class="contact-block">
-                    <img src="img/email-icon.svg" alt="email">
+                    <img src="img/-email-icon.svg" alt="email">
                     <div>
                         <span>Электронная почта:</span>
                     </div>
                     <span>test@example.com</span>
                 </div>
                 <div class="contact-block">
-                    <img src="img/clock-icon.svg" alt="clock">
+                    <img src="img/-clock-icon.svg" alt="clock">
                     <div>
                         <span>Время работы:</span>
                     </div>
