@@ -64,6 +64,8 @@ header {
     display: flex;
     align-items: center;
     margin: 10px 0 8px 0;
+    width: 100%;
+    /* padding-left: 13px; */
 }
 
 .header-contacts a {
@@ -81,9 +83,15 @@ header {
     margin-right: 5px;
 }
 
+.header-contacts__schedule {
+    width: 100%;
+}
+
 .header-contacts__email {
     display: flex;
     align-items: center;
+    width: 100%;
+    /* padding-left: 13px; */
 }
 
 .header-contacts__email img {
@@ -103,17 +111,6 @@ header {
         color: #f1f1f1;
         text-decoration: none;
         text-align: center;
-    }
-}
-
-@media (max-width: 760px) {
-    header {
-        grid-template-columns: 1fr 1fr;
-        padding: 0;
-    }
-
-    .header-menu {
-        display: none;
     }
 }
 
@@ -272,11 +269,70 @@ textarea::placeholder {
 /* ---------------------------------- */
 
 .about {
+    max-width: 670px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 0 25% 40px 25%;
+    margin: auto;
 }
+
+.about-description {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.about-block {
+    height: 380px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.shifted {
+    position: relative;
+    top: -90px;
+}
+
+.about-block__text {
+    margin-left: 34px;
+}
+
+.about-block p {
+    font-size: 18px;
+    align-self: center;
+}
+
+.about-img-wrapper {
+    height: 380px;
+}
+
+.about-block img {
+    width: 100%;
+    height: inherit;
+}
+
+@media (max-width: 760px) {
+    header {
+        grid-template-columns: 1fr 1fr;
+        padding: 0;
+    }
+
+    .header-menu {
+        display: none;
+    }
+
+    .about {
+        margin: 0 20px;
+    }
+}
+
+@media (max-width: 530px) {
+    .about-description {
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+/* -------------- */
 
 .services {
     display: flex;
@@ -381,7 +437,14 @@ textarea::placeholder {
 }
 
 h2 {
+    font-size: 48px;
+    font-weight: bold;
     margin: 40px 0;
+    margin-bottom: 0;
+}
+
+.bold {
+    font-weight: bold;
 }
 
 .footer-contacts-row {
