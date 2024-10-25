@@ -313,7 +313,6 @@ textarea::placeholder {
 /* -------------- */
 
 .services {
-    background-color: #adbabd;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -326,7 +325,7 @@ textarea::placeholder {
     margin-top: 10px;
 }
 
-.about-services {
+.about-services, .about-languages {
     max-width: 670px;
     display: flex;
     align-items: center;
@@ -409,37 +408,65 @@ textarea::placeholder {
 
 .languages {
     display: flex;
+    justify-content: center;
+}
+
+.dark {
+    color: #252525;
+}
+
+.available-languages {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.available-languages .language-block {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding-bottom: 40px;
-    background-color: #f0eff4;
+    background-color: #6676A9;
+    padding: 10px;
+    border-radius: 5px;
+    color: #EEF1F8;
+    width: 100px;
+    box-shadow: 4px 4px 4px #6676A9;
 }
 
-.availbale-languages {
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    padding-top: 40px;
-}
-
-.availbale-languages ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.availbale-languages li img {
-    width: 24px;
-    margin-right: 10px;
-    border-radius: 50%;
-}
-
-.availbale-languages li {
-    display: flex;
-    align-items: center;
+.language-block span {
     margin-bottom: 10px;
+    font-size: 12px;
+    text-align: center;
 }
+
+.language-block img {
+    width: 70px;
+}
+
+@media (max-width: 1024px) {
+    .available-languages {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .available-languages {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 630px) {
+    .available-languages {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .available-languages .language-block {
+        width: 80px;
+    }
+}
+
+/* -------------------------------------- */
 
 .how-to {
     display: flex;
