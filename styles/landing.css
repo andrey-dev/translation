@@ -268,7 +268,7 @@ textarea::placeholder {
   
 /* ---------------------------------- */
 
-.about {
+.section-block {
     max-width: 670px;
     display: flex;
     align-items: center;
@@ -276,7 +276,7 @@ textarea::placeholder {
     margin: auto;
 }
 
-.about-description {
+.header-description {
     font-size: 24px;
     margin: 10px 0;
 }
@@ -310,6 +310,64 @@ textarea::placeholder {
     height: inherit;
 }
 
+/* -------------- */
+
+.services {
+    background-color: #adbabd;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: url('/img/services-bg.svg');
+}
+
+.about-services .services-description {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.about-services {
+    max-width: 670px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.about-services br {
+    display: none;
+}
+
+.white {
+    color: #fff;
+}
+
+.services p {
+    margin: 0 0 40px 0;
+}
+
+.services-wrapper {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.services-wrapper h3 {
+    color: #2F3045;
+}
+
+.service {
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.service ul {
+    padding-left: 14px;
+}
+
 @media (max-width: 760px) {
     header {
         grid-template-columns: 1fr 1fr;
@@ -320,50 +378,34 @@ textarea::placeholder {
         display: none;
     }
 
-    .about {
+    .section-block {
         margin: 0 20px;
+    }
+
+    .about-services br {
+        display: block;
+    }
+}
+
+@media (max-width: 720px) {
+    .services-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .service {
+        margin: auto;
+        width: 300px;
     }
 }
 
 @media (max-width: 530px) {
-    .about-description {
+    .header-description {
         font-size: 20px;
         text-align: center;
     }
 }
 
-/* -------------- */
-
-.services {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 0 25% 40px 25%;
-    background-color: #adbabd;
-}
-
-.services p {
-    margin: 0 0 1em 0;
-}
-
-.services-wrapper {
-    display:grid;
-    grid-template-columns: 300px 300px;
-    grid-row: auto auto;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-}
-
-.service {
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-.service ul {
-    padding-left: 14px;
-}
+/* ----------------------------------- */
 
 .languages {
     display: flex;
