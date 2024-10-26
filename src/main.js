@@ -10,7 +10,7 @@ function sendRequest() {
     console.warn('Name and phone or email should be provided');
     return;
   }
-  // DATA: name, email, phone, comment
+  // == DATA: name, email, phone, comment
   fetch("http://localhost:3000/request", {
     method: "POST",
     body: JSON.stringify(formData),
